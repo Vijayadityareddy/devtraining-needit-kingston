@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="Active" max_length="40" name="active" type="string"/>
+        <element label="Assigned to" max_length="40" name="assigned_to" type="string"/>
+        <element label="Description" max_length="100" name="description" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="parent" max_length="40" name="parent" type="string"/>
+        <element choice="1" label="Priority" mandatory="true" max_length="40" name="priority" type="string">
+            <choice>
+                <element label="High" sequence="0" value="high"/>
+                <element label="Medium" sequence="1" value="medium"/>
+                <element label="Low" sequence="2" value="low"/>
+            </choice>
+        </element>
+        <element label="Short Description" max_length="40" name="short_description" type="string"/>
+        <element default="javascript:global.getdate();" label="New Due Date" max_length="40" name="u_due_date_1" type="due_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Log" max_length="40" name="u_string_1" type="string"/>
+        <element label="Work notes" max_length="500" name="work_notes" type="string"/>
+    </element>
+</database>
